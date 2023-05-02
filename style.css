@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -5,7 +6,8 @@
     list-style: none;
     border: none;
     outline: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 a{
@@ -18,9 +20,20 @@ a{
 }
 
 :root{
-    --main-color:rgb(203, 32, 218);
-    --light-color:aqua;
+    --main-color:#cb20da;
+    --light-color:#00ffff;
+    --h1-font-size:22px;
+    --h2-font-size:21px;
+    --h3-font-size:20px;
+    --h4-font-size:19px;
+    --p-font-size:18px;
 
+}
+
+.align{
+    max-width: 1200px;
+    margin: auto;
+    padding:0 3rem;
 }
 
 ::-webkit-scrollbar{
@@ -33,33 +46,39 @@ a{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color:gray;
+    background-color:#808080;
 
 }
 
 html{
-    scroll-behavior: smooth;
-}
-
-section{
-    padding:4rem 3rem;
-    max-width: 100%;
-    margin:0% auto;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+    scroll-padding-top: 10.5rem;
 }
 
 .header{
     position: sticky;
     top:0;
-    background-color:skyblue;
+    left: 0;
+    right: 0;
+    background-color:#87ceeb;
 }
 
+
+
+
 .header .flex{
+
+   
     display:flex;
     justify-content: space-between;
     position: relative;
     align-items: center;
     padding:1rem 2rem;
+   
 }
+
+
 
 .header .flex .logo img{
     height:5rem;
@@ -68,17 +87,18 @@ section{
 
 .header .flex h1{
     margin-right:25%;
-    font-size: 25px;
+    font-size:var(--h1-font-size);
     text-transform: uppercase;
-    color: white;
+    color: #ffffff;
 }
 
 
  .layout{
+    
     display: flex;
     width: 100%;
-    height:8vh;
-    background-color:blue;
+    height:9vh;
+    background-color:#0000ff;
 }
 
 .nav-links{
@@ -87,71 +107,74 @@ section{
     width:85%;
     margin-top:10px;
     margin-left:10%;
-    font-size: 23px;
+    font-size:var(--h2-font-size);
 }
 
 .nav-links a{
-    color: white;
+    color: #ffffff;
     text-transform: none;
 }
 
 .nav-links a:hover{
-    color: chartreuse;
+    color: #7fff00;
     text-decoration: underline;
 }
 
 .Home{
-    display:flex;
-    flex-direction: row;
-    gap:10rem;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem;
     align-items: center;
     background-image: url("img1/IMG_20190611_115735.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 60rem;
+    min-height: 50rem;
+    padding: 1rem;
 
 }
 
 .Home .card{
-    background-color:seashell;
+    background-color:#fff5ee;
     display: inline-block;
     text-align: center;
-    height: 450px;
+    height: 430px;
     width: 380px;
     border-radius: 5px solid;
+    padding: 1rem;
 
 }
 
 .Home .card h1{
-    font-size: 25px;
-    color: black;
-    margin-top: 43%;
+    font-size:var(--h1-font-size);
+    color: #000000;
+    margin-top: 40%;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .Home .card p{
-    font-size:20px;
-    color:blue;
+    font-size:var(--p-font-size);
+    color:#0000ff;
     line-height: 2;
 }
 
 .Home .card-1{
-    background-color:chartreuse;
+    background-color:#7fff00;
     display: inline-block;
     text-align: center;
-    height:450px;
+    height:430px;
     width: 380px;
     border-radius: 5px solid;
+    padding: 1rem;
 
 
 }
 
 .Home .card-1 h1{
-    font-size: 25px;
-    color: black;
-    margin-top: 43%;
+    font-size:var(--h1-font-size);
+    color: #000000;
+    margin-top: 40%;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
@@ -160,120 +183,126 @@ section{
 
 .Home .card-1 p{
     
-font-size: 20px;
-color: blue;
+font-size:var(--p-font-size);
+color: #0000ff;
 line-height: 2;
     
 }
 
 .Home .card-2{
-    background-color:greenyellow;
+    background-color:#adff2f;
     display: inline-block;
     text-align: center;
-    height:450px;
+    height:430px;
     width: 380px;
     border-radius: 5px solid;
+    padding: 1rem;
 
 }
 
 .Home .card-2 h1{
-    font-size: 25px;
-    color: black;
-    margin-top: 43%;
+    font-size:var(--h1-font-size);
+    color: #000000;
+    margin-top: 40%;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .Home .card-2 p{
     
-font-size: 20px;
-color: blue;
+font-size:var(--p-font-size);
+color: #0000ff;
 line-height: 2;
     
 }
 
 .About{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
+    margin-top: 5%;
+   
+   
 }
 
 .About .image img{
     width:100%;
-    height: 100%;
-    padding:2rem;
-    background-color: aqua;
-    margin-top:15%;
+    height:100%;
+    padding: 1.5rem;
+    background-color: #00ffff;
+    margin-top:30%;
 }
 
 
 .About .content{
-    width:40rem;
+    width:55rem;
     text-align: center;
-    margin-top:10%;
-    padding: 1rem;
-    background-color: yellow;
+    margin-top:17%;
+    padding: 1.5rem;
+    background-color: #ffff00;
 }
 
 .About .content h1{
-    font-size: 25px;
+    font-size:var(--h1-font-size);
     margin-bottom:1rem;
-    color: black;
+    color: #000000;
     text-transform: uppercase;
 }
 
 .About .content h2{
-    font-size: 20px;
-    line-height: 2;
+    font-size: var(--h2-font-size);
+    line-height:1.5;
     margin-bottom: 1rem;
-    color:crimson;
-    border: 2px solid black;
+    color:#dc143c;
+    border: 2px solid #000000;
 }
 
 .About .content p{
-    font-size: 20px;
-    line-height: 2;
-    color: blue;
-    border: 2px solid black;
+    font-size:var(--p-font-size);
+    line-height: 1.5;
+    color: #0000ff;
+    border: 2px solid #000000;
 }
 
 .Departments{
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     gap: 2rem;
+    margin-top: 15%;
+
 }
 
 .Departments .heading{
-    display: block;
     text-align: center;
-    padding: 0.7rem 1rem;
+    padding:10px;
     width: 100%;
-    margin-top:10%;
-    background-color:chartreuse;
+    margin-top:15%;
+    background-color:#7fff00;
 }
 
 .Departments .heading h1{
     text-decoration: underline;
     text-transform: uppercase;
-    margin-bottom: 1rem;
-    font-size: 25px;
-    color: black;
-    margin-bottom: 1rem;
+    font-size:var(--h1-font-size);
+    color: #000000;
+    
 }
 .Departments .sector{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: chocolate;
+    background-color: #d2691e;
     width: 100%;
 
 }
 
 .Departments .sector h1{
     text-align: center;
-    font-size: 25px;
-    color: darkblue;
+    font-size:var(--h1-font-size);
+    font-weight: bold;
+    color: #00008b;
     text-transform: uppercase;
     margin-bottom: 1rem;
     text-decoration: underline;
@@ -283,13 +312,14 @@ line-height: 2;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 23px;
-    color: black;
+    font-size:var(--h2-font-size);
+    color: #000000;
 }
 
 .Departments .sector h3{
-    color:darkblue;
-    font-size:21px;
+    color:#00008b;
+    font-size:var(--h3-font-size);
+    font-weight: bold;
     margin-left: 5%;
     margin-bottom: 1rem;
     
@@ -297,126 +327,138 @@ line-height: 2;
 }
 
 .Departments .sector h4{
-    color: black;
+    color: #000000;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 23px;
+    font-size:var(--h4-font-size);
+    font-weight: bold;
 
 }
 .Departments .sector p{
     margin-left: 5%;
-    color: gold;
-    font-size: 21px;
+    color: #ffd700;
+    font-size:var(--p-font-size);
+    font-weight: bold;
+    
 }
 
 .Admission{
     display:flex;
+    flex-direction: column;
     align-items:center ;
     gap: 3rem;
+    margin-top: 10%;
 }
 
 .Admission .section{
     text-align: center;
     margin-top:10%;
-    border: 2px solid black;
-    padding: 3rem 2rem;
+    border: 2px solid #000000;
+    padding: 2rem;
 }
 
 .Admission .section img{
-    width: 35rem;
-    height: 30rem;
-    margin-bottom: 2rem;
+    width:35rem;
+    height:33rem;
+    margin-bottom: 1rem;
 
 }
 
 .Admission .section h1{
     text-transform: uppercase;
-    font-size: 25px;
+    font-size:var(--h1-font-size);
     font-weight: bold;
-    color:white;
+    color:#ffffff;
     text-decoration:underline;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    background-color: brown;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #a52a2a;
 }
 
 .Admission .section p{
-    font-size: 25px;
-    color:blue;
+    font-size:var(--p-font-size);
+    color:#0000ff;
     line-height: 1;
-    padding: 2rem;
-    background-color:darkturquoise;
+    padding: 1.5rem;
+    background-color:#00ced1;
+    font-weight: bold;
     
     
 }
 
+
 .Placement .column-area{
-    display: flex;
-    gap:9rem;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
-    margin-top: 10%;
-    padding: 3rem 2.5rem;
-    background-color: ghostwhite;
+    gap: 3.5rem;
+    margin-top: 15%;
+    padding: 0.5rem;
+    background-color: #f8f8ff;
 }
 
 .Placement .column-area .column{
-    width: 95rem;
-    text-align: center;
+     width: 30rem;
 
 }
 
 .Placement .column-area .column h1{
     text-transform: uppercase;
     text-decoration: underline;
-    font-size: 28px;
+    font-size:var(--h1-font-size);
     font-weight: bold;
-    color: black;
+    color: #000000;
+    margin-top: 13%;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .Placement .column-area .column p{
-    font-size: 20px;
-    color: darkblue;
+    font-size:var(--p-font-size);
+    color: #00008b;
     line-height:1.5;
 }
 .Placement .column-area .steps img{
-    width:38rem;
-    height: 10rem;
+    width:30rem;
+    height:15rem;
+    margin-top: 15%;
 
 }
 
 .Facility{
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    margin-top: 10%;
 }
 
 .Facility .border {
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid #000000;
     padding: 3rem 2rem;
     margin-top: 10%;
 }
 
 .Facility .border h1{
-    font-size: 27px;
+    font-size:var(--h1-font-size);
     font-weight: bold;
-    color: cornflowerblue;
+    color: #6495ed;
     text-transform: uppercase;
     text-decoration: underline;
     margin-bottom: 1rem;
-    padding: 2rem;
-    background-color: cyan;
+    padding: 1.5rem;
+    background-color: #00ffff;
 }
 
 .Facility .border p{
-    font-size: 23px;
+    font-size:var(--p-font-size);
     line-height: 2;
-    color: black;
+    color: #000000;
     padding: 2rem 3rem;
-    background-color: darksalmon;
+    background-color: #e9967a;
 
 
 }
@@ -425,26 +467,30 @@ line-height: 2;
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: underline;
-    margin-top:10%;
+   
 }
 
 .Contact .second h1{
-    color:black;
-    font-size:28px;
+    color:#000000;
+    font-size:var(--h1-font-size);
     margin-bottom: 2rem;
     text-transform: uppercase;
+    margin-top:15%;
 }
 
 .Contact .box-container{
-    display: flex;
-    flex-direction:row;
+    display: grid;
+    grid-template-columns: 21% 21% 21% 21%;
     align-items: center;
-    gap:5rem;
+    gap: 4rem;
+
 }
+  
 
 .Contact .box-container .box{
+    width: 18rem;
     text-align: center;
-    margin-left: auto;
+ 
 }
 
 .Contact .box-container .box i{
@@ -453,28 +499,27 @@ line-height: 2;
     width:6rem;
     height:6rem;
     border-radius:50%;
-    background-color: darkgoldenrod;
-    color: aqua;
+    background-color: #b8860b;
+    color: #00ffff;
 
 }
 
 .Contact .box-container .box h1{
-    font-size: 25px;
-    color: black;
-    margin:1rem 0
-
+    font-size:var(--h1-font-size);
+    color: #000000;
+    margin:1rem 0;
 }
 
 .Contact .box-container .box p{
-    font-size: 23px;
-    color: darkblue;
+    font-size:var(--p-font-size);
+    color: #00008b;
     line-height: 1;
 }
 .Footer{
     width: 100%;
-    padding:3rem;
-    background-color: black;
-    margin-top: 13%;
+    padding:2rem;
+    background-color: #000000;
+    margin-top: 17%;
 
 }
    
@@ -502,16 +547,18 @@ line-height: 2;
 
  
 .Footer .Footer-container .sharp p{
-    color:white;
-    font-size: 27px;
+    color:#ffffff;
+    font-size:var(--p-font-size);
+    font-weight: bold;
     margin-bottom: 1rem;
     
 }
 
 .Footer .Footer-container .solid p{
-    color: white;
+    color: #ffffff;
+    font-weight: bold;
     line-height: 1;
-    font-size: 26px;
+    font-size: var(--p-font-size);
 }
 
 @media only screen and (min-width:360px) and (max-width:427px){
@@ -530,15 +577,16 @@ line-height: 2;
     }
 
     .header .layout .nav-links{
-        display: grid;
+        display:grid;
         align-items: center;
         margin-left:17%;
     }
     .Home{
         display:flex;
-        flex-wrap: wrap;
+       flex-wrap: wrap;
         align-items: center;
         background-position: center;
+        padding: 1rem;
      }
 
 
@@ -547,12 +595,18 @@ line-height: 2;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        padding: 1rem;
+    }
+
+    .About .image img{
+        padding: 1rem;
     }
 
     .Departments{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+        padding: 1rem;
     }
 
 
@@ -561,25 +615,28 @@ line-height: 2;
         display:flex;
         flex-direction: column;
         align-items: center;
+       
     }
     .Admission .section{
-        padding: 1rem;
+        padding: 10px;
         text-align: center;
     }
 
     .Admission .section img{
-        width: 100%;
-        height: 100%;
+        width:20rem;
+        height: 19rem;
     }
+
 
 
 
 
 
     .Placement .column-area{
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
     }
 
     .Placement .column-area .column{
@@ -589,8 +646,8 @@ line-height: 2;
     
 
     .Placement .column-area .steps img{
-        width:280px;
-        height: 250px;
+        width:18rem;
+        height:16rem;
     }
 
     .Facility{
@@ -606,13 +663,14 @@ line-height: 2;
 
 
     .Contact .box-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      align-items: center;
     }
     .Contact .box-container .box{
+        width: 16rem;
         text-align: center;
-        margin-right: auto;
+      
     }
 
     .Footer .Footer-container{
@@ -650,7 +708,7 @@ line-height: 2;
     .header .layout .nav-links{
         display: grid;
         align-items: center;
-        margin-right:8%;
+        margin-right:auto;
 
     }
 
@@ -658,13 +716,16 @@ line-height: 2;
         display: flex;
         flex-direction: column;
         background-position: center;
+        background-size: cover;
         align-items: center;
+        padding: 1rem;
     }
 
     .About{
         display:flex;
         flex-wrap: wrap;
         align-items: center;
+        padding: 1rem;
 
     }
 
@@ -674,15 +735,16 @@ line-height: 2;
         align-items: center;
     }
     .Admission .section{
-        padding:2rem;
+        padding:1rem;
+
 
       
     }
 
 
     .Admission .section img{
-        width:100%;
-        height: 100%;
+        width:23rem;
+        height:20rem;
     }
 
 
@@ -691,29 +753,32 @@ line-height: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
     }
 
     .Placement .column-area .column{
         text-align: center;
-        width: 30rem;
+        width: 23rem;
     }
 
     .Placement .column-area .steps img{
-        width:30rem;
-        height: 15rem;
+        width:25rem;
+        height: 20rem;
+        margin-left: 1%;
     }
 
 
 
     .Contact .box-container {
-        display: flex;
-        flex-direction: column;
+        display:grid;
+       grid-template-columns: repeat(1,1fr);
         align-items: center;
     }
 
     .Contact .box-container .box{
         text-align: center;
-        margin-right: auto;
+        width: 24rem;
+      
     }
 
     .Facility{
